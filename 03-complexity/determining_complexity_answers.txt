@@ -1,0 +1,47 @@
+1. Big-O value is O(1). Regardless of the input value, the function will only complete one operation.
+This is a constant timed algorithm.
+
+Elements (n):        Number of Operations(worst-case scenario):
+1                                       1
+2                                       1
+3                                       1
+4                                       1
+5                                       1
+
+2. 2. Big-O value is O(n). In the worst-case scenario, the algorithm will complete the same number of operations as the length of the input array.
+Since the growth of the number of operations equals the input, this is a linear timed algorithm.
+
+Elements (n):        Number of Operations(worst-case scenario):
+1                                       1
+2                                       2
+3                                       3
+4                                       4
+5                                       5
+
+3. Big-O value is O(n^2). This algorithm has two loops nested within each other. Each loop is a linear time algorithm.
+However, for each cycle within the outer loop, the algorithm will iterate through the entire inner loop. Therefore,  the Big-O value is O(n) * O(n) = O(n^2).
+
+4. Big-O value is O(2^n). This recursive algorithm will call itself again twice if the input value is larger than 1 and the number of operations is growing exponentially.
+Therefore, this is a exponential time algorithm.
+
+Elements (n):        Number of Operations(worst-case scenario):
+
+1                                     1
+2                                     2
+3                                     4
+4                                     8
+5                                     16
+
+5. Big-O value is O(n). The while loop will cycle through until a variable 'i' starting at zero and increasing by 1 until 'i' is larger than or equal to
+the input. The number of operations equal the input number and this is a linear time algorithm.
+
+Elements (n):      Number of Operations(worst-case scenario):
+1                                    1
+2                                    2
+3                                    3
+4                                    4
+5                                    5
+
+6. Big-O value is O(n^2). In a worst case scenario, the pivot is the smallest number in the array. The while loop will iterate through the entire array.
+However, no 'sorting' will occur since the pivot is the smallest number. All elements will remain to the right of the pivot. The Big-O for the while loop is O(n).
+Next, the function will call the algorithm again recursively from 'pivot + 1' to the end.  So, T(n) = T(n-1) + O(n) = O(n^2).
