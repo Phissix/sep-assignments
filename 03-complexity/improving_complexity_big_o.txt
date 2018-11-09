@@ -1,0 +1,13 @@
+1.
+The Big-O is O(n^2) for version 1. The method has a loop within a loop at O(n), so overall, the Big-O is O(n^2).
+To optimize the code, I used the .flatten! method to concat the arrays into a combined array. Instead of starting the sorted array at the last value,
+I refactored it by starting at the first value. The sorted_array.length was assigned a variable to access the array only once.
+
+2.
+The Big-O time complexity of time complexity improvement is O(n log n). A merge sort was implemented instead of the selection sort.
+Selection sort has a nested loop and the Big-O value is not ideal.
+Likewise, merge sort has a Big-O value of O(n log n) since it uses a divide and conquer approach to the sorting process and more efficient.
+
+3.
+The Big-O value for the space complexity is O(n^2). I decided to use quick sort to sort the array in place instead of creating a second sorted array in order to save space.
+The Big-O value has no improvement, but we are saving some space since we are using only one copy of the array.
